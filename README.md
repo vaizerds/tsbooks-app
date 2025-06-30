@@ -1,41 +1,98 @@
-# 🚀 TSBooks API
+# 📚 TSBooks API
 
-> API REST para gerenciamento de biblioteca pessoal — cadastro, listagem e avaliação de livros.
-
----
-
-## 🔖 Sobre o Projeto
-
-TSBooks API é uma aplicação backend construída com Node.js, Express e Prisma ORM para gerenciar livros de usuários, utilizando banco de dados PostgreSQL em container Docker.
-
-Essa API oferece endpoints para criação e consulta de livros, com relacionamento entre usuários e livros, utilizando as melhores práticas modernas para desenvolvimento de APIs.
+> Uma API REST moderna para gerenciar sua biblioteca pessoal de livros com Node.js, Prisma e PostgreSQL containerizado no Docker.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 🚀 Sobre
 
-| Tecnologia    | Versão/Detalhe                   |
-| ------------ | ------------------------------- |
-| Node.js      | 18+                             |
-| Express      | 4.x                             |
-| Prisma ORM   | 4.x                             |
-| PostgreSQL   | 15 (container Docker)            |
-| Docker       | Compose para containerização    |
-| TypeScript   | Para tipagem estática           |
+Você já quis organizar seus livros favoritos de forma simples, rápida e eficiente?  
+O **TSBooks API** foi feito para isso! Uma API backend poderosa, escalável e fácil de usar para cadastrar, listar e gerenciar livros associados a usuários.
 
 ---
 
-## ⚙️ Como Rodar o Projeto
+## 💡 Funcionalidades
+
+- 🚀 API RESTful simples e eficiente  
+- 📦 CRUD completo de livros com relacionamento a usuários  
+- 🐘 Banco PostgreSQL em container Docker  
+- ⚡ Utiliza Prisma ORM para produtividade e segurança no banco  
+- 🔐 Preparada para autenticação e segurança futuras  
+- 🧪 Fácil de testar e ampliar
+
+---
+
+## 🛠️ Tecnologias
+
+| Tecnologia     | Descrição                       |
+| -------------- | ------------------------------ |
+| Node.js + TS   | Backend moderno e tipado       |
+| Express        | Framework web minimalista      |
+| Prisma ORM     | Banco de dados com segurança   |
+| PostgreSQL     | Banco relacional robusto       |
+| Docker         | Containerização para fácil setup |
+
+---
+
+## 🚀 Como rodar localmente
 
 ### Pré-requisitos
 
-- [Node.js](https://nodejs.org/)
-- [Docker](https://www.docker.com/)
+- Docker
+- Node.js
+- npm
+
+### Passos rápidos
+
+```bash
+cd backend
+docker-compose up -d
+npm install
+npx prisma generate
+npx prisma migrate dev --name init
+npm run dev
+```
 
 ---
 
-### Passo 1: Iniciar o banco PostgreSQL via Docker
+## 🔗 Endpoints principais
 
-No diretório `backend`:
+| Método | Endpoint | Descrição               |
+| ------ | -------- | ---------------------- |
+| GET    | /books   | Listar todos os livros  |
+| POST   | /books   | Criar um novo livro     |
 
-docker-compose up -d
+---
+
+## 📁 Estrutura do projeto
+
+```
+backend/
+├── prisma/            # Schema Prisma e migrações
+├── src/               # Código backend (Express + Prisma)
+│   └── index.ts       # Entry point
+├── docker-compose.yml
+├── .env                # Variáveis de ambiente
+├── package.json
+└── tsconfig.json
+```
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são super bem-vindas!  
+Abra issues, forks e pull requests para ajudar a melhorar o projeto.
+
+---
+
+## 📞 Contato
+
+**Daniel Lucas Costa Rodrigues**  
+[LinkedIn](https://www.linkedin.com/in/dlcrodrigues/) | daniel.l.c.rodrigues@gmail.com
+
+---
+
+## 📝 Licença
+
+MIT License © 2025 Daniel Lucas Costa Rodrigues
