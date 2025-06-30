@@ -1,22 +1,41 @@
-# TSBooks App
+# 🚀 TSBooks API
 
-A full stack book manager built with Next.js, TypeScript, Prisma, and Tailwind CSS.
+> API REST para gerenciamento de biblioteca pessoal — cadastro, listagem e avaliação de livros.
 
-## Features
-- Sign in with GitHub
-- Add and view books (title, author, rating)
-- User-based access
-- PostgreSQL via Prisma
-- Deployed-ready with Vercel
+---
 
-## Setup
-```bash
-git clone https://github.com/seu-usuario/tsbooks-app.git
-cd tsbooks-app
-npm install
-npx prisma generate
-npm run dev
-```
+## 🔖 Sobre o Projeto
 
-## .env setup
-Use `.env.example` as base. Add your GitHub OAuth keys.
+TSBooks API é uma aplicação backend construída com Node.js, Express e Prisma ORM para gerenciar livros de usuários, utilizando banco de dados PostgreSQL em container Docker.
+
+Essa API oferece endpoints para criação e consulta de livros, com relacionamento entre usuários e livros, utilizando as melhores práticas modernas para desenvolvimento de APIs.
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+| Tecnologia    | Versão/Detalhe                   |
+| ------------ | ------------------------------- |
+| Node.js      | 18+                             |
+| Express      | 4.x                             |
+| Prisma ORM   | 4.x                             |
+| PostgreSQL   | 15 (container Docker)            |
+| Docker       | Compose para containerização    |
+| TypeScript   | Para tipagem estática           |
+
+---
+
+## ⚙️ Como Rodar o Projeto
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/)
+- [Docker](https://www.docker.com/)
+
+---
+
+### Passo 1: Iniciar o banco PostgreSQL via Docker
+
+No diretório `backend`:
+
+docker-compose up -d
